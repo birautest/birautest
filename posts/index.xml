@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Hugo test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Sep 2019 14:12:09 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 18:25:22 +0700</lastBuildDate>
     
 	<atom:link href="http://test.birau.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dua</title>
+      <link>http://test.birau.com/posts/dua/</link>
+      <pubDate>Sun, 01 Sep 2019 18:25:22 +0700</pubDate>
+      
+      <guid>http://test.birau.com/posts/dua/</guid>
+      <description>dua</description>
+    </item>
     
     <item>
       <title>Welcome</title>
