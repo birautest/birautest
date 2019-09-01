@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-us"><head>
+<head>
   <meta charset="utf-8">
-  <title>Hugo test</title>
+  <title>Welcome</title>
 
   <meta name="generator" content="Hugo 0.57.2" />
 
@@ -43,13 +42,12 @@
   <link rel="icon" href="http://test.birau.com/images/favicon.png" type="image/x-icon">
 
 </head>
-<body>
-        
-        <!-- header -->
-        <header class="hero-section overlay bg-cover banner" data-background="http://test.birau.com/">
-            <div class="container mb-100">
-                <!-- navigation -->
-                <nav class="navbar navbar-expand-lg navbar-light">
+
+
+<!-- navigation -->
+<header class="shadow-bottom sticky-top bg-white">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="http://test.birau.com/"></a>
   <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
     aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,82 +69,47 @@
     </select>
   </div>
 </nav>
-                <!-- /navigation -->
-            </div>
-        <!-- banner -->
-<div class="container">
-    <div class="row">
-    <div class="col-lg-8 text-center mx-auto">
-    <h1 class="text-white mb-3"></h1>
-    <p class="text-white mb-4"></p>
-        <div class="position-relative">
-        <input id="search" class="form-control" placeholder="">
-        
-        <script>
-            $(function() {
-            var projects = [
-                
-                {
-                    value: "Dua",
-                    label: "Dua",
-                    url:"http:\/\/test.birau.com\/posts\/dua\/"
-                },
-                
-                {
-                    value: "Welcome",
-                    label: "Welcome",
-                    url:"http:\/\/test.birau.com\/posts\/welcome\/"
-                },
-                
-            ];
-            $( "#search" ).autocomplete({
-                minLength: 0,
-                source: projects,
-                focus: function( event, ui ) {
-                    $( "#search" ).val( ui.item.label );
-                    return false;
-                },
-                select: function( event, ui ) {
-                    $( "#search" ).val( ui.item.label );
-                    $( "#project-id" ).val( ui.item.value );
-                    return false;
-                }
-            })
-            .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-                return $( "<li>" )
-                .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.label + "</a>" )
-                .appendTo( ul );
-            };
-            });
-        </script>
-        </div>
-    </div>
-    </div>
-</div>
-<!-- /banner -->
-        </header>
-        <!-- /header -->
-        
-        <div id="content">
+  </div>
+</header>
+<!-- /navigation -->
 
-  <!-- topics -->
-  <section class="section bg-gray">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
+
+<section class="single pt-5 bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="p-4 bg-white sticky-top top-100">
+            
+            <nav class="sidebar-menu">
+              <ul class="list-styled">
+            <li class="parent d-block "><a href="http://test.birau.com/posts/">Posts</a>
+              <ul class="sub-menu">
+            <li class=""><a href="http://test.birau.com/posts/dua/">Dua</a>
+            </li>
+            <li class=" active "><a href="http://test.birau.com/posts/welcome/">Welcome</a>
+            </li></ul>
               
-            </div>
-            <!-- topic-item -->
+            </li></ul>
+            </nav>
+
             
         </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-5 bg-white">
+            <h2>Welcome</h2>
+            <p>Welcome wilkomen ahlan wa sahlan</p>
+
+            <p class="post-meta border-bottom pb-3 mb-0">Updated on 01 Sep 2019</p><nav class="pagination mt-3"><a class="nav nav-prev" href="http://test.birau.com/posts/dua/" title="Dua"><i class="ti-arrow-left mr-2"></i>Dua</a>
+            <a class="nav nav-next" href="http://test.birau.com/posts/dua/" title="Dua">Dua<i class="ti-arrow-right ml-2"></i></a>
+            </nav></div>
+      </div>
     </div>
-  </section>
-  <!-- /topics -->
-
-  
+  </div>
+</section>
 
 
-        </div><!-- footer -->
+<!-- footer -->
 <footer class="section bg-gray pb-0">
   <div class="container">
     <div class="row">
@@ -171,5 +134,4 @@
 
 <!-- Main Script -->
 
-<script src="http://test.birau.com/js/script.min.js"></script></body>
-</html>
+<script src="http://test.birau.com/js/script.min.js"></script>

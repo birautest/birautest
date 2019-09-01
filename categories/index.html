@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>Hugo test</title>
+  <title>Categories</title>
 
   <meta name="generator" content="Hugo 0.57.2" />
 
@@ -45,10 +45,9 @@
 </head>
 <body>
         
-        <!-- header -->
-        <header class="hero-section overlay bg-cover banner" data-background="http://test.birau.com/">
-            <div class="container mb-100">
-                <!-- navigation -->
+        <!-- navigation -->
+        <header class="shadow-bottom sticky-top bg-white">
+            <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="http://test.birau.com/"></a>
   <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
@@ -71,79 +70,80 @@
     </select>
   </div>
 </nav>
-                <!-- /navigation -->
             </div>
-        <!-- banner -->
-<div class="container">
-    <div class="row">
-    <div class="col-lg-8 text-center mx-auto">
-    <h1 class="text-white mb-3"></h1>
-    <p class="text-white mb-4"></p>
-        <div class="position-relative">
-        <input id="search" class="form-control" placeholder="">
-        
-        <script>
-            $(function() {
-            var projects = [
-                
-                {
-                    value: "Dua",
-                    label: "Dua",
-                    url:"http:\/\/test.birau.com\/posts\/dua\/"
-                },
-                
-                {
-                    value: "Welcome",
-                    label: "Welcome",
-                    url:"http:\/\/test.birau.com\/posts\/welcome\/"
-                },
-                
-            ];
-            $( "#search" ).autocomplete({
-                minLength: 0,
-                source: projects,
-                focus: function( event, ui ) {
-                    $( "#search" ).val( ui.item.label );
-                    return false;
-                },
-                select: function( event, ui ) {
-                    $( "#search" ).val( ui.item.label );
-                    $( "#project-id" ).val( ui.item.value );
-                    return false;
-                }
-            })
-            .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-                return $( "<li>" )
-                .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.label + "</a>" )
-                .appendTo( ul );
-            };
-            });
-        </script>
-        </div>
-    </div>
-    </div>
-</div>
-<!-- /banner -->
         </header>
-        <!-- /header -->
+        <!-- /navigation -->
         
         <div id="content">
 
-  <!-- topics -->
-  <section class="section bg-gray">
+  <!-- page title -->
+  <section class="section bg-dark">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              
-            </div>
-            <!-- topic-item -->
-            
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          
+          
+            <!-- Javascript -->
+            <script>
+              $(function() {
+                var projects = [
+                  
+                ];
+                $( "#search" ).autocomplete({
+                    minLength: 0,
+                    source: projects,
+                    focus: function( event, ui ) {
+                      $( "#search" ).val( ui.item.label );
+                        return false;
+                    },
+                    select: function( event, ui ) {
+                      $( "#search" ).val( ui.item.label );
+                      $( "#project-id" ).val( ui.item.value );
+                      return false;
+                    }
+                })
+                .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+                  return $( "<li>" )
+                  .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.label + "</a>" )
+                  .appendTo( ul );
+                };
+              });
+            </script>
         </div>
+      </div>
     </div>
   </section>
-  <!-- /topics -->
+  <!-- /page title -->
 
-  
+  <!-- details page -->
+  <section class="single section bg-gray pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="mb-5 bg-white p-4 sticky-top">
+            <a href="http://test.birau.com/categories/">
+              <h4 class="mb-4">Categories</h4>
+            </a>
+            <ul class="list-styled">
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="p-5 bg-white">
+              <h2>Categories</h2>
+              <div class="bg-gray p-4">
+                  <h3 class="mt-0"> "Articles" </h3>
+                  <ul class="list-unstyled">
+                    
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /details page -->
 
 
         </div><!-- footer -->
